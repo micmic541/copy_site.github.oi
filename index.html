@@ -18,28 +18,54 @@
 </head>
 <body>
 	<header class="header" id="head_wrap">
-		<div class="inner float-right">
-			<div id="mobile-head">
-				<div>
-					<span></span>
-					<span></span>
-					<span></span>
+		<div id="inner">
+			<div id="mobile-head" class="container-fluid">
+				<div id="ham" class="ham float-right">
+					<span class="ham_line ham_line1"></span>
+					<span class="ham_line ham_line2"></span>
+					<span class="ham_line ham_line3"></span>
+				</div>
+				<div id="menu_wrapper">
+					<nav class="menu">
+						<ul class="text-uppercase d-flex flex-column">
+							<li><span class="chevron">&rsaquo; </span><a href="#head_wrap">top</li></a>
+							<li><span class="chevron">&rsaquo; </span><a href="#sec01">vision</a></li>
+							<li><span class="chevron">&rsaquo; </span><a href="#sec02">message</a></li>
+							<li><span class="chevron">&rsaquo; </span><a href="#sec03">service</a></li>
+							<li><span class="chevron">&rsaquo; </span><a href="#sec04">story</a></li>
+							<li><span class="chevron">&rsaquo; </span><a href="#sec05">plofile</a></li>
+						</ul>
+					</nav>
 				</div>
 			</div>
-			<nav id="global-nav">
-				<ul class="text-uppercase d-flex">
-					<li><a href="#head_wrap">top</a></li>
-					<li><a href="#sec01">vision</a></li>
-					<li><a href="#sec02">message</a></li>
-					<li><a href="#sec03">service</a></li>
-					<li><a href="#sec04">story</a></li>
-					<li><a href="#sec05">plofile</a></li>
-				</ul>
-			</nav>
+			<div id="display-head" class="fixed-top">
+				<nav id="global-nav" class="float-right">
+					<ul class="text-uppercase d-flex">
+						<li><a href="#head_wrap">top</a></li>
+						<li><a href="#sec01">vision</a></li>
+						<li><a href="#sec02">message</a></li>
+						<li><a href="#sec03">service</a></li>
+						<li><a href="#sec04">story</a></li>
+						<li><a href="#sec05">plofile</a></li>
+					</ul>
+				</nav>
+			</div>
 		</div>
-		<div id="bgimg"></div>
+		<div class="text-center">
+			<img src="img/bgimg.jpg" alt="" class="p-0 col-lg-10 col-12">
+			<h1 class="main_title pb-3">Vestibulum mauris</h1>
+			<h2 class="sub_title">最新技術と自然との調和を目指す</h2>
+		</div>
 	</header>
-	<section>
+	<section id="sec01" class="container-fluid text-center">
+		<h2 class="sub_title text-uppercase">vision</h2>
+		<p class="text-justify mx-auto py-4 col-lg-8 col-9">
+		ちかごろ世間で日本歴史の科学的研究ということがしきりに叫ばれている。
+		科学的研究というのが近代史学の学問的方法による研究という意義であるならば、
+		これは史学の学徒の間においては一般に行われていることであるから、
+		今さらこと新しくいうには及ばないはずである。上にいったようなことがらについては、
+		曖昧あいまいな態度をとり、または真実でない知識を強いて注入していたことも、明かな事実である。
+		</p>
 	</section>
 	<section>
 	</section>
@@ -53,6 +79,7 @@
 	</footer>
 	<!--jquery-->
 	<script src="jquery-3.5.1.min.js"></script>
+	<script src="hello.js"></script>
 	<!--Bootstrap jQuery-->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>

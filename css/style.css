@@ -11,17 +11,86 @@ img { width: 100%; }
 
 html { font-size: 100%; }
 
-body, a { font-family: Arial, sans-serif; font-weight: 300; line-height: 27px; text-decoration: none; }
+body, a { 
+	font-family: Arial, sans-serif;
+	font-weight: 300;
+	line-height: 27px;
+	text-decoration: none;
+	font-size: 14px;
+}
 
-.main-title { font-family: 'Pacifico', cursive; font-size: 40px; }
+.main_title { font-family: 'Pacifico', cursive; font-size: 40px; }
 
-.sub-title { font-family: 'Noto Sans JP', serif; font-size: 22px; }
+.sub_title { font-family: 'Noto Sans JP', serif; font-size: 22px; }
 
 .main-title, .sub-title { font-weight: 400; line-height: 42px; }
 
 /*header*/
+header #inner{ width: 100%; z-index: 1; }
 
-#global-nav nav { background-color: transparent; }
-#global-nav ul { padding: 27px 27px 20px 0px; margin: 0; list-style: none;}
+#global-nav ul { padding: 15px 30px 9px 0px; margin: 0; list-style: none;}
 #global-nav li { padding: 10px; }
-#global-nav a, #global-nav a:hover { color: #333; }
+#global-nav a, #global-nav a:hover, .menu a, .menu a:hover
+{ color: #333; }
+
+header img { height: 560px; object-fit: cover; }
+
+header .main_title, header .sub_title
+	{ color: #fff; position: relative; left: 0; top: -288px; }
+header .sub_title { font-family: serif; }
+
+/*css for nav scroll*/
+.scroll { 
+	opacity: .8;
+	background: #fff;
+	border-bottom: 1px #ccc solid;
+}
+
+/*css for hamburger menu*/
+.mobile-head, .menu { display: none; }
+
+
+@media (max-width: 767px) {
+	
+	/*header*/
+	
+	header .container-fluid { padding: 9px 0 0 0; }
+
+	header #inner { position: absolute; }
+	.mobile-head, .menu { display: inline;}
+	#global-nav { display: none; }
+	
+	/*css for hamburger menu*/
+	#ham { position: relative; width: 40px; height: 40px; margin-bottom: 9px; }
+
+	.ham_line {
+		position: absolute; 
+		left: 10px; 
+		width: 20px; 
+		height: 2px; 
+		background-color: #fff; 
+		transition: all .3s; 
+	}
+	
+	.ham_line1 { top: 10px; }
+	.ham_line2 { top: 18px; }
+	.ham_line3 { top: 26px; }
+	
+	.clicked .ham_line1 { transform: rotate(45deg); top: 20px; }
+	.clicked .ham_line2 { width: 0px; }
+	.clicked .ham_line3 { transform: rotate(-45deg); top: 20px; }
+	
+	#menu_wrapper { clear: both; position: relative; top: -400px; transition: .3s; }
+	
+	.menu {
+		flex-direction: column;
+		width: 100%; 
+		transition: all .3s; 
+	}
+	.menu ul { list-style-type: none; background: #fff;}
+	.menu li { padding: 13px 0; border-bottom: 1px #ccc solid; }
+	.menu a { display: inline-block; width: 90%;}
+	.chevron { padding: 0 8px; font-size: 22px; font-weight: 500; }
+	
+	#menu_wrapper.clicked { top: 0; }
+}
