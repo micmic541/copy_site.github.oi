@@ -68,8 +68,9 @@ header .sub_title { font-family: serif; }
 	background-attachment: fixed;
 	background-position: right;
 	background-size: cover; 
-} */
- 
+} iOS対応せず*/
+
+/*iOS　対応fixed bg*/
 #sec04:before {
 	content: ''; 
 	display: block; 
