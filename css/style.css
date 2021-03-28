@@ -129,7 +129,7 @@ td { text-align: left; }
 	.clicked .ham_line2 { width: 0px; }
 	.clicked .ham_line3 { transform: rotate(-45deg); top: 20px; }
 	
-	#menu_wrapper { clear: both; position: relative; top: -400px; transition: .3s; }
+	#menu_wrapper { clear: both; position: relative; top: -440px; transition: .3s; }
 	
 	.menu {
 		flex-direction: column;
