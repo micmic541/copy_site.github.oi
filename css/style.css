@@ -48,6 +48,8 @@ header .sub_title { font-family: serif; }
 { display: flex; flex-direction: row; }
 .message { background-color: #F6F6F6; }
 
+#sec02 .text { padding: inherit; }  /**---修正2021-03-30---**/
+
 #sec02 img { padding: 0; object-fit: cover; }
 
 /*sec03*/
