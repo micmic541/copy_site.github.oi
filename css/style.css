@@ -46,7 +46,8 @@ header .sub_title { font-family: serif; }
 /*sec02*/
 .flex-box01, .flex-box02, .flex-box03, .flex-box04, .flex-box05
 { display: flex; flex-direction: row; }
-.message { background-color: #F6F6F6; }
+.message { background-color: #F6F6F6; display: flex; justify-content: center; align-items: center; }
+/**---修正2021-03-31---**/
 
 #sec02 .text { padding: inherit; }  /**---修正2021-03-30---**/
 
